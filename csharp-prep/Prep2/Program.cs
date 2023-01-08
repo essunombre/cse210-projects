@@ -10,19 +10,24 @@ class Program
         int number = int.Parse(grade);
         string final = "";
 
-        if (number >= 90){
+        if (number >= 90)
+        {
             final = "A";
         }
-        else if (number >= 80 ){
+        else if (number >= 80)
+        {
             final = "B";
         }
-        else if (number >= 70){
+        else if (number >= 70)
+        {
             final = "C";
         }
-        else if (number >= 60){
+        else if (number >= 60)
+        {
             final = "D";
         }
-        else if (number < 60){
+        else if (number < 60)
+        {
             final = "F";
         }
 
