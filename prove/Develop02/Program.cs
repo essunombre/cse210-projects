@@ -80,7 +80,6 @@ class Program
                 Write(_questions);
                 writing = Console.ReadLine();
 
-
             }
             //To display()
             else if (answer == 2)
@@ -113,8 +112,6 @@ class Program
             }
 
         }
-
-
 
     }
 }
