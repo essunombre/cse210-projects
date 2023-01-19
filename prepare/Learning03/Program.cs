@@ -13,7 +13,7 @@ class Program
         Console.WriteLine(f2.GetFractionString());
         Console.WriteLine(f2.GetDecimalValue());
 
-        Fraction f3 = new Fraction(80, 24);
+        Fraction f3 = new Fraction(800, 27);
         Console.WriteLine(f3.GetFractionString());
         Console.WriteLine(f3.GetDecimalValue());
         
