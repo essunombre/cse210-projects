@@ -23,9 +23,7 @@ class Program
                 if (choice == 1)
                 {
                     Goal simpleGoal = new SimpleGoal();
-                    Console.WriteLine(simpleGoal.GetGoalName());
-                    Console.WriteLine(simpleGoal.GetGoalDescription());
-                    Console.WriteLine(simpleGoal.GetGoalPoints());
+                    simpleGoal.DisplayGoalInfo();
                 }
                 else if (choice == 2)
                 {
@@ -38,6 +36,10 @@ class Program
                     checklistGoal.DisplayGoalInfo();
                 }
 
+            }
+            else if(choice == 2)
+            {
+                goal.ListGoals();
             }
             else
             {

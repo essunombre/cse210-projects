@@ -5,6 +5,7 @@ public class Goal
     private int _goalPoints;
     public bool _goalFinished;
     public int _choice;
+    private string _goalSummary = "";
 
     public string GetGoalName()
     {
@@ -29,6 +30,14 @@ public class Goal
     public void SetGoalPoints(int goalPoints)
     {
         _goalPoints = goalPoints;
+    }
+    public string GetGoalSummary()
+    {
+        return _goalSummary;
+    }
+    public void SetGoalSummary(string goalSummary)
+    {
+        _goalSummary = goalSummary;
     }
     public int DisplayStartMessage()
     {
@@ -64,11 +73,17 @@ public class Goal
         SetGoalDescription(Console.ReadLine());
         Console.WriteLine("What is the amount of points associated with this goal?");  
         SetGoalPoints(Convert.ToInt32(Console.ReadLine()));
+ 
     }
     public void ListGoals()
     {
        Console.WriteLine("The goals are");
        Console.WriteLine($"{GetGoalName()} ({GetGoalDescription()})");
+
+    }
+
+    public void SaveGoal()
+    {
 
     }
 
