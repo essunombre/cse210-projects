@@ -37,6 +37,9 @@ public class Product
     {
         _quantity = quantity;
     }
-
+    public int CalculatePrice()
+    {
+        return _quantity * _price;
+    }
 
 }

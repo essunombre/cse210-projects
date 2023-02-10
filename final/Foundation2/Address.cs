@@ -39,11 +39,20 @@ public class Address
     {
         _country = country;
     }
-
-    public void Display()
+    public bool GetInternational()
     {
-        Console.WriteLine($"{_street}\n{_city}\n{_state}\n{_country}");
+        return _international;
     }
+    public void SetInternational(bool international)
+    {
+        _international = international;
+    }
+
+    public string Display()
+    {
+        return $"{_street}\n{_city}\n{_state}\n{_country}";
+    }
+    
 
 
 
