@@ -78,8 +78,11 @@ class Program
         foreach(Order orden in ordenes)
         {
             orden.GetShippingLabel();
+            Console.WriteLine("");
             orden.ShowPackingLabel();
-            Console.WriteLine(orden.GetTotalPrice());                
+            Console.WriteLine("");
+            Console.WriteLine(orden.GetTotalPrice());
+            Console.WriteLine("");                
         }
     }
 }//If it is returning (since it is a void) I must use the ConsoleWriteLine
